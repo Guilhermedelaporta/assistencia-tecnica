@@ -1,0 +1,49 @@
+.responsive-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media (max-width: 768px) {
+    .responsive-form {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  button {
+    grid-column: 1 / -1;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }.responsive-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media (max-width: 768px) {
+    .responsive-form {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  button {
+    grid-column: 1 / -1;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }

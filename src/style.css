@@ -1,0 +1,115 @@
+.nav-bar {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+  }
+  
+  .logo {
+    padding: 10px;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  @media (max-width: 600px) {
+    .nav-bar {
+      grid-template-columns: 1fr;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-links a {
+      padding: 5px;
+    }
+  }
+
+  .interactive-sections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    border: 2px solid;
+  }
+  
+  .section {
+    padding: 20px;
+    background: #f4f4f4;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .interactive-sections {
+      grid-template-columns: 1fr;
+    }
+  }
+
+
+/* Estilo básico para a seção */
+.container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 100%; /* Permite usar toda a largura disponível */
+    margin: 0 auto;
+    overflow-x: auto; /* Adiciona barra de rolagem horizontal, se necessário */
+  }
+  
+  /* Centraliza o conteúdo principal */
+  .main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto; /* Adiciona rolagem horizontal, se os itens excederem o espaço */
+  }
+  
+  /* Configura o Flexbox no container da lista */
+  .flex-container {
+    display: flex;
+    justify-content: flex-start; /* Alinha os itens à esquerda */
+    flex-wrap: nowrap; /* Garante que os itens fiquem em uma única linha */
+    gap: 15px; /* Espaçamento entre os itens */
+  }
+  
+  /* Estilo para a lista */
+  ul {
+    list-style: none; /* Remove marcadores padrão */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Torna a lista horizontal */
+    gap: 15px; /* Espaçamento entre os itens */
+    flex-wrap: nowrap; /* Evita que os itens quebrem linha */
+  }
+  
+  /* Estilo para os itens da lista */
+  li {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    white-space: nowrap; /* Garante que o texto dentro dos itens não quebre */
+    text-align: center;
+  }
+  
+  /* Efeito hover */
+  li:hover {
+    background-color: #0056b3;
+  }
+  
+  
